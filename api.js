@@ -396,7 +396,7 @@ app.put("/user", (req,res) => {
         {
             nama_user: req.body.nama_user,
             username: req.body.username,
-            password: req.body.password
+            password: md5(req.body.password)
         },
 
         // parameter (primary key)
